@@ -1,0 +1,129 @@
+
+
+
+
+*{
+    
+    overflow: hidden;
+    /* background-color: #6CC417; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    
+}
+.bodyForm{
+    width:100%;  
+   height: 1200px;
+   background-image:url('/assets/Background.jpg') ;
+}
+form{
+    /* margin-top: 20%; */
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgs{
+    
+  text-align: center;
+}
+
+.imgs img{
+    margin-top: 20%;
+    width:60%;
+    margin-bottom: 5%;
+    /* align-items: center; */
+   
+    /* background-color: #dc3545; */
+}
+
+.submits{
+    /* margin-left: 40%; */
+    /* margin-top: 20px; */
+    width: 100%;
+   
+    height: auto;
+}
+button{
+    border-radius: 20px;
+    width: 40%;
+    height: 4rem;
+    border: solid 3px white;
+    background-color: #0C55A5;
+    color: aliceblue;
+    font-size: 33px;
+    font-weight: bold;
+    
+}
+.input[type="text"]::placeholder {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .input[type="text"]:focus {
+    background-color: transparent;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .input[type="text"].focused {
+    background-color: transparent;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  
+  
+  
+.input{
+    background-color: transparent;
+    height: 3.5rem;
+    
+    border-radius: 15px;
+    border: 2px solid white;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+
+/* .submit{
+    width:25%;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
+.submits button{
+    margin-top:25%;
+    width :100%;
+    height: 3rem;
+    background-color:#0C55A5;
+    color: aliceblue;
+    font-size: 55px;
+    
+} */
+
+.forms{
+    /* margin-top: 2%; */
+    background-color: rgb(12, 85, 165,0.8);
+    padding: 30px;
+    border-radius: 25px;
+    border: solid 4px white;
+    /* opacity: -2; */
+    text-align: center;
+    color: white;
+    
+    
+}
+
+.forms h1{
+    margin-bottom: 5%;
+}
+
+.h6{
+    margin-top: 10%;
+}
+
+.form-check-label{
+    margin-left: 20px;
+}

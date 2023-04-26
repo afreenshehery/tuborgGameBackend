@@ -1,0 +1,33 @@
+<!-- <div class="main">
+    <div class="brand">
+        <img src="/assets/2 (2).png" alt="">
+    </div>
+    <div class="vdo">
+        <video  controls  id="myVideo">
+            <source src="assets/vdos/line-up-done-640-x-384_rXvnQ8P0.mp4" type="video/mp4">
+           
+          </video>
+    </div>
+<div class="nextbtn">
+
+    <button type="button" class="btn btn-danger" routerLink="/form">NEXT</button>
+</div>
+    
+</div> -->
+<div class="main">
+    <div class="imgs">
+        <img src="/assets/Tuborg logo Open File.png" alt="">
+    </div>
+    <div class="snapshot" *ngIf="webcamImage">
+        <img [src]="webcamImage" />
+    </div>
+<div class="row buttons">
+	<div class="col">
+		<button class="btn retake col"  routerLink="/selfy">Re-Take</button>
+	</div>
+	<div class="col">
+		<button class="btn capture col " (click)="share()">SHARE</button>
+	</div>
+</div>
+</div>
+

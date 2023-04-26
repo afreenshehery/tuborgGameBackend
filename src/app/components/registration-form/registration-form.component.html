@@ -1,0 +1,75 @@
+
+    <div class="bodyForm">
+      <form #f="ngForm" >
+        <div class="imgs">
+            <img src="/assets/Tuborg logo Open File.png" alt="">
+        </div>
+        <div class="forms">
+          <h1>PLEASE ENTER YOUR DETAILS</h1>
+        <div class="form-group">
+          <!-- <label for="exampleInputEmail1">Name</label> -->
+          <input type="text" class="form-control"  name="user_name" placeholder="FULL NAME*" #name1="ngModel" [(ngModel)]="subject_obj.name" required  >
+          <!-- <div class="alert alert-danger" *ngIf="name1.touched && name1.invalid">
+            <p> Name can't be blank.</p>
+        </div> -->
+         
+        </div>
+       
+        
+        <div class="form-group">
+            <label for="exampleInputEmail1"> </label>
+            <input type="text" class="form-control"  name="phone" placeholder="MOBILE NUMBER*" #phone="ngModel" [(ngModel)]="subject_obj.phone" required  oninput="this.value = this.value.replace(/[^0-9.]/g, '');" minlength="10" maxlength="10" >
+          <!-- <div class="alert " *ngIf="phone.touched && phone.invalid">
+            <p> Name can't be blank.</p>
+        </div> -->
+           
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"></label>
+            <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="subject_obj.email" #Email="ngModel" aria-describedby="emailHelp" name="email" placeholder="EMAIL ID*" required>
+            <!-- <div class="alert " *ngIf="phone.touched && phone.invalid">
+              <p> Email can't be blank.</p>
+          </div> -->
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"></label>
+            <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="subject_obj.City" name="city" #city="ngModel" aria-describedby="emailHelp" placeholder="CITY*" required>
+            <!-- <div class="alert " *ngIf="phone.touched && phone.invalid">
+              <p> City can't be blank.</p>
+          </div> -->
+          </div>
+
+
+          <div class="form-group">
+            <label for="exampleInputPassword1"></label>
+            <input type="text" class="form-control"  name="age" placeholder="AGE*" #Age="ngModel" [(ngModel)]="subject_obj.age" required  >
+            <div class="alert alert-danger" *ngIf=" subject_obj.age<25">
+              <p>Age can't be less the 25</p>
+          </div>
+          </div>
+
+
+            <div class="h6">
+              <input class="form-check-input " type="checkbox" name="check"  #check="ngModel" [(ngModel)]="subject_obj.check" value="" id="flexCheckDefault" required >
+              <label class="form-check-label" for="flexCheckDefault">
+                PLEASE CONFIRM IF YOU ARE ABOVE 25 YEARS*
+              </label>
+            </div>
+
+
+
+
+
+
+          
+          <br>
+          <div class="submits">
+            <button  class="btn" [disabled]="f.invalid  ||!subject_obj.name" (click)="submit()" routerLink="/selfy">SUBMIT</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+    
